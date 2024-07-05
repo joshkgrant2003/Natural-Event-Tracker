@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  padding: 10px;
+  background-color: firebrick;
+  color:#FFFFFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.event-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.event-icon {
+  font-size: 1.5rem;
+}
+
+.wildfire-icon {
+  font-size: 1.25rem;
+  color: red;
+}
+
+.volcano-icon {
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.iceberg-icon {
+  font-size: 1.25rem;
+  color: lightskyblue;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.loader img {
+  position: relative;
+  top: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.loader h1 {
+  margin-top: -100px;
+}
+
+.event-info {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.event-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-info li {
+  padding: 5px 0;
+}
+
+.nasa-api-link {
+  color: #FFFFFF;
+}
+
+.picklist {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  width: 145px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  font-size: 18px;
+  color: #FFFFFF;
+  z-index: 1000;
+}
